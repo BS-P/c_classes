@@ -1,31 +1,32 @@
 #include<stdio.h>
 int main ()
 {
-	int x ;
+	int x;
 	printf("please enter a num\n");
 	scanf ("%d",&x);
 	if (x>0)
 	{
-		printf("num is positive\n");
+	    printf("num is positive\n");
 	}
 	else
 	{
         printf ("error");
 	}
-	
-	int y = x%10;
-	printf("unit place digit is: %d\n", y);
-        
-	int z = (x/10)%10;
-	printf("tens place digit is: %d\n" , z);
-         
-	int a = x/100;
-	printf("hundred place digit is: %d\n", a);
 
-        int sum = y+z+a ; 
-        printf("sum of all digit is: %d\n" , sum);
+	while(x>0)
+	{	
+	int temp = x%10;
+	int k = x/10;
+	    x=k;
 
+	  printf("value of temp is: %d\n" ,temp);
+                                                     
+
+	} 
 
 
-return 0 ;
+return 0;
 }
+
+
+
