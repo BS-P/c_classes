@@ -19,10 +19,10 @@ int main ()
 	int k = x/10;
 	    x=k;
 
-	  printf("value of temp is: %d\n" ,temp);
-                                                     
-
-	} 
+	  printf("value of temp is: %d\n" ,temp);  	  
+	}
+	
+  printf("sum of digits is: %d\n" , sum);
 
 
 return 0;
