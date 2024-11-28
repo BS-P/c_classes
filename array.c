@@ -21,6 +21,21 @@ int main ()
       
        }   
       
+      for (int i=0;i<4;i++)
+      {
+	      if (a[0]>a[i])
+	         {
+			int temp=a[i];
+		        a[i]=a[0];	
+			a[0]=temp;
+		 }
+      }
+   
+      for(int i=0;i<5;i++)
+      {
+	printf("value of array is: %d\t",a[i]);
+      }
+
 
 return 0;
 
