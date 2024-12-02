@@ -2,7 +2,7 @@
 int main ()
 {
 	int a[5]={2,8,5,4,1};
-        
+       i 
 /*
 
        for(int i=0;i<4;i++)
@@ -33,8 +33,33 @@ int main ()
       for(int i=0;i<5;i++)
       {
 	printf("value of array is: %d\n",a[i]);
+      
       }
-        
+
+      int k , flag=0; 
+      printf("Enter the num you want:\n");
+      scanf("%d",&k);
+         for (int i=0;i<5;i++)
+          {
+		      if (a[i]==k)
+                      {
+		      printf("given number exist");
+		      
+			      break;
+		      }
+                     else{ 
+                         flag = -1;
+                        }
+}
+if (flag==-1)
+{
+ printf(" num doesn't exist\n");
+
+ }	 
+          
+
+
+
 
 
 return 0;
