@@ -32,12 +32,12 @@ int main ()
 
       for(int i=0;i<10;i++)
       {
-	printf("value of array is: %d\n",a[i]);
+	printf(" %d\t",a[i]);
       
       }
 
       int k , flag=0; 
-      printf("Enter the num you want:\n");
+      printf("\nEnter the num you want:");
       scanf("%d",&k);
          for (int i=0;i<10;i++)
           {
@@ -59,28 +59,28 @@ if (flag==-1)
         
 
 printf("binary search operation\n");
-int x,y;
-int left=0,right=9;
-while (left<=right)
+int x;
+int low=0,high=9;
+while (low<=high)
 {
-	int mid=left+(right-left)/2;
+	int mid=low+(high-low)/2;
 
-	if (a[mid]==y)
+	if (a[mid]==k)
 	{
-		printf("Number found is:%d\n",mid);
+		printf("Number found at location:%d\n",mid);
  		break;
 	}
-	if (a[mid]<y)
+        else if (a[mid]<k)
 	{
-		left=mid+1;
-		printf("value of 2nd number is:%d\n",mid+1);
-		break;
+		low=mid+1;
+	//	printf("Number of right side is :%d\n",left);
+		
 	}
 	else
 	{
-		right=mid-1;
-		printf("right side num is:%d\n",mid-1);
-		break;
+		high=mid-1;
+	//	printf("Number of left side is :%d\n",right);
+	
 	}
 }
 
@@ -89,4 +89,4 @@ return 0;
 
 }
 
-             
+            
